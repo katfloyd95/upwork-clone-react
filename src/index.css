@@ -3,11 +3,46 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+.App {
+  background-color: #F1F2F4;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.login-box {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+  height: 40vh;
+  margin: auto;
+}
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: 70%;
+}
+.login-content {
+  color: grey;
+}
+.login-content > h1,
+.login-content > input[type=password] {
+  margin-bottom: 30px;
+}
+.login-content > input[type=email] {
+  margin-bottom: 10px;
+}
+.login-content > input {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #8bd693;
+  border-radius: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

@@ -5,5 +5,8 @@ const PRIMARY_GREEN = "#39B54A";
 const SECONDARY_NAVY = "#2B5468";
 
 export const PrimaryButton = styled(Button)(() => ({
-  background: PRIMARY_GREEN
+  background: PRIMARY_GREEN,
+  textTransform: 'none',
+  borderRadius: '20px',
+  width: '100%'
 }));

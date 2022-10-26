@@ -7,6 +7,5 @@ const SECONDARY_NAVY = "#2B5468";
 export const PrimaryButton = styled(Button)(() => ({
   background: PRIMARY_GREEN,
   textTransform: 'none',
-  borderRadius: '20px',
-  width: '100%'
+  borderRadius: '20px'
 }));

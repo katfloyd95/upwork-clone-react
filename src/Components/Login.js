@@ -1,30 +1,34 @@
-import { LoginBox, PrimaryButton } from "./StyledComponents";
-import { FaUserAlt } from "react-icons/fa";
-import Box from '@mui/material/Box';
+import { LoginBox, PrimaryButton, LoginContainer, LoginInput } from "./StyledComponents";
+import Typography from '@mui/material/Typography';
+import InputAdornment from '@mui/material/InputAdornment';
+import FormControl from '@mui/material/FormControl';
+import AccountCircle from '@mui/icons-material/AccountCircle';
 
 export default function Login() {
   return (
-    <Box sx={{
-      width: '100%', 
-      height: '100vh', 
-      backgroundColor: '#F0F1F4',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
-    }}>
+    <LoginContainer>
       <LoginBox>
-        <PrimaryButton variant="contained">Continue with Email</PrimaryButton>
+        <Typography sx={{color: 'grey', margin: '25px 0'}} variant="h4" gutterBottom>
+          Log In
+        </Typography>
+
+        <FormControl sx={{width: '80%'}}>
+          <LoginInput
+            id="email"
+            placeholder="Email or Username"
+            startAdornment={
+              <InputAdornment position="start">
+                <AccountCircle />
+              </InputAdornment>
+            }
+          />
+          <LoginInput
+            id="password"
+            placeholder="Password"
+          />
+          <PrimaryButton variant="contained">Continue with Email</PrimaryButton>
+        </FormControl>
       </LoginBox>
-    </Box>
-    // <div className="login-container">
-    //   <div className="login-box">
-    //     <div className="login-content">
-    //       <h1>Log In</h1>
-    //       <input type='email' placeholder="Username or Email" />
-    //       <input type='password' placeholder="Password" />
-    //       <PrimaryButton variant="contained">Continue with Email</PrimaryButton>
-    //     </div>
-    //   </div>
-    // </div>
+    </LoginContainer>
   );
 }

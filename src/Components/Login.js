@@ -9,7 +9,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 
-export default function Login() {
+export default function Login({ setLoggedIn }) {
   return (
     <LoginContainer>
       <LoginBox>
@@ -32,7 +32,9 @@ export default function Login() {
             }
           />
           <LoginInput id="password" placeholder="Password" />
-          <PrimaryButton variant="contained">Continue with Email</PrimaryButton>
+          <PrimaryButton variant="contained" onClick={() => setLoggedIn(true)}>
+            Continue with Email
+          </PrimaryButton>
         </FormControl>
       </LoginBox>
     </LoginContainer>

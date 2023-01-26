@@ -64,6 +64,7 @@ export default function ButtonAppBar() {
           sx={{
             display: "flex",
             justifyContent: "space-between",
+            paddingLeft: 0,
           }}
         >
           <Search>

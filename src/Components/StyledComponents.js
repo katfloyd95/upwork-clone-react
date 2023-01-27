@@ -3,7 +3,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Input from "@mui/material/Input";
 
-const PRIMARY_GREEN = "#39B54A";
+export const PRIMARY_GREEN = "#39B54A";
 export const SECONDARY_NAVY = "#2B5468";
 
 export const PrimaryButton = styled(Button)(() => ({

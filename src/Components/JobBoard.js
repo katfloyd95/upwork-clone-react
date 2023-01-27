@@ -2,6 +2,7 @@ import TopNav from "./TopNav";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import CategoryMenu from "./CategoryMenu";
+import BodySearch from "./BodySearch";
 
 export default function JobBoard() {
   return (
@@ -41,7 +42,9 @@ export default function JobBoard() {
             background: "blue",
             width: "70%",
           }}
-        ></Box>
+        >
+          <BodySearch />
+        </Box>
       </Box>
     </>
   );

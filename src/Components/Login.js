@@ -12,7 +12,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 export default function Login({ setLoggedIn }) {
   return (
     <LoginContainer>
-      <LoginBox>
+      <LoginBox sx={{ textAlign: "center" }}>
         <Typography
           sx={{ color: "grey", margin: "25px 0" }}
           variant="h4"
